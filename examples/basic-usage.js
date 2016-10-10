@@ -11,7 +11,7 @@ setInterval(function() {
 
 var amqpClient2 = require( '@udx/amqp-client' ).create( "amqp://duqbivtd:mVyUDrh_SEdsX_A_aHj8ZfEhB7CQlNTf@black-boar.rmq.cloudamqp.com/duqbivtd" );
 
-amqpClient2.worker( "jobs", "jobs", function( msg, cb ) {
+amqpClient2.worker( "jobs", {}, function( msg, cb ) {
   console.log( "Got msg", msg.content.toString() );
   cb(true);
 } );
