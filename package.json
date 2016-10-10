@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/udx/amqp-client#readme",
   "dependencies": {
-    "amqplib": "^0.4.2"
+    "amqplib": "^0.4.2",
+    "debug": "^2.2.0",
+    "lodash": "^4.16.4"
   }
 }
