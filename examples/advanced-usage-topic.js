@@ -13,7 +13,7 @@ if( !process.env.AMQP_URL ) {
 
 // Consume messages
 
-var amqpClient1 = require( '@udx/amqp-client' ).create( process.env.AMQP_URL );
+var amqpClient1 = require( 'amqp-client' ).create( process.env.AMQP_URL );
 
 // Assert Exchange and Queue and binds our routing keys rules for my.custom.queue queue
 amqpClient1.worker( "test.topic", {
@@ -28,7 +28,7 @@ amqpClient1.worker( "test.topic", {
 
 // Publish messages
 
-var amqpClient2 = require( '@udx/amqp-client' ).create( process.env.AMQP_URL );
+var amqpClient2 = require( 'amqp-client' ).create( process.env.AMQP_URL );
 
 var publisher = amqpClient2.publisher();
 

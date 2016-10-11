@@ -14,7 +14,7 @@ if( !process.env.AMQP_URL ) {
 
 // Consume messages
 
-var amqpClient1 = require( '@udx/amqp-client' ).create( process.env.AMQP_URL );
+var amqpClient1 = require( 'amqp-client' ).create( process.env.AMQP_URL );
 
 amqpClient1.worker( "test.headers", {
   "exchange": "test.headers.exchange",
@@ -47,7 +47,7 @@ amqpClient1.worker( "test.headers", {
 
 // Create Logs Queue for test.headers.exchange where we publish all data coming to test.headers.exchange
 
-var amqpClient2 = require( '@udx/amqp-client' ).create( process.env.AMQP_URL );
+var amqpClient2 = require( 'amqp-client' ).create( process.env.AMQP_URL );
 
 amqpClient2.worker( "test.headers.logs", {
   "exchange": "test.headers.exchange",
@@ -62,7 +62,7 @@ amqpClient2.worker( "test.headers.logs", {
 
 // Publish messages
 
-var amqpClient3 = require( '@udx/amqp-client' ).create( process.env.AMQP_URL );
+var amqpClient3 = require( 'amqp-client' ).create( process.env.AMQP_URL );
 
 var publisher = amqpClient3.publisher();
 

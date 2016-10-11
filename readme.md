@@ -8,7 +8,7 @@ AMQP Client with reconnection logic to publish and consume RabbitMQ messages
 
 ```
 # Initialize our amqp client
-var amqpClient = require( '@udx/amqp-client' ).create( "amqp://localhost" );
+var amqpClient = require( 'amqp-client' ).create( "amqp://localhost" );
 # start publisher. It opens stable connection to Rabbit MQ.
 var publisher = amqpClient.publisher();
 # Publish your message to queue jobs. Default exchange is used in the example.
@@ -50,7 +50,7 @@ var options = {
 
 ```
 # Initialize our amqp client
-var amqpClient = require( '@udx/amqp-client' ).create( "amqp://localhost" );
+var amqpClient = require( 'amqp-client' ).create( "amqp://localhost" );
 # Start worker. As mentioned above it also creates exchange, queue and binds routes if they are not set.
 amqpClient.worker( "jobs", {}, function( msg, cb ) {
   console.log( "Got msg", msg.content.toString() );

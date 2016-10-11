@@ -1,5 +1,5 @@
 {
-  "name": "@udx/amqp-client",
+  "name": "amqp-client",
   "version": "0.1.2",
   "description": "",
   "main": "lib/amqp-client.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/udx/amqp-client.git"
+    "url": "git+https://github.com/rets-ci/node-amqp-client.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/udx/amqp-client/issues"
+    "url": "https://github.com/rets-ci/node-amqp-client/issues"
   },
-  "homepage": "https://github.com/udx/amqp-client#readme",
+  "homepage": "https://github.com/rets-ci/node-amqp-client#readme",
   "dependencies": {
     "amqplib": "^0.4.2",
     "debug": "^2.2.0",

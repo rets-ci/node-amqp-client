@@ -13,7 +13,7 @@ if( !process.env.AMQP_URL ) {
 
 // Consume messages
 
-var amqpClient1 = require( '@udx/amqp-client' ).create( process.env.AMQP_URL );
+var amqpClient1 = require( 'amqp-client' ).create( process.env.AMQP_URL );
 
 amqpClient1.worker( "test", {}, function( msg, cb ) {
   console.log( "Got msg [%s]", msg.content.toString() );
@@ -22,7 +22,7 @@ amqpClient1.worker( "test", {}, function( msg, cb ) {
 
 // Publish messages
 
-var amqpClient2 = require( '@udx/amqp-client' ).create( process.env.AMQP_URL );
+var amqpClient2 = require( 'amqp-client' ).create( process.env.AMQP_URL );
 
 var publisher = amqpClient2.publisher();
 
