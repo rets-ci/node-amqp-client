@@ -123,6 +123,6 @@ If message is successfully parsed, it has to return `true`, in other case, - `fa
 
 ## Examples
 
-* [Basic Usage](../examples/basic-usage.js)
-* [Advanced Usage - Topic](../examples/advanced-usage-topic.js)
-* [Advanced Usage - Headers](../examples/advanced-usage-headers.js)
+* [Basic Usage](../master/examples/basic-usage.js)
+* [Advanced Usage - Topic](../master/examples/advanced-usage-topic.js)
+* [Advanced Usage - Headers](../master/examples/advanced-usage-headers.js)
